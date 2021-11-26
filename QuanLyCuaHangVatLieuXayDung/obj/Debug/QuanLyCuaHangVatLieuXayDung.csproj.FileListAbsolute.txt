@@ -1,0 +1,14 @@
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\bin\Debug\QuanLyCuaHangVatLieuXayDung.exe.config
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\bin\Debug\QuanLyCuaHangVatLieuXayDung.exe
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\bin\Debug\QuanLyCuaHangVatLieuXayDung.pdb
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.csproj.AssemblyReference.cache
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.csproj.SuggestedBindingRedirects.cache
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.Properties.Resources.resources
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.csproj.GenerateResource.cache
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.csproj.CoreCompileInputs.cache
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.exe
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.pdb
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmDangNhap.resources
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmMainMenu.resources
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmNhaCC.resources
+C:\Users\phamt\source\repos\QuanLyCuaHangVatLieuXayDung\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmNhanVien.resources
