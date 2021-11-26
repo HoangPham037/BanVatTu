@@ -62,7 +62,7 @@
             this.btnTimKiem.Location = new System.Drawing.Point(718, 207);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(81, 31);
-            this.btnTimKiem.TabIndex = 40;
+            this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -70,10 +70,10 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(127, 146);
+            this.txtEmail.Location = new System.Drawing.Point(138, 146);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(257, 24);
-            this.txtEmail.TabIndex = 36;
+            this.txtEmail.Size = new System.Drawing.Size(246, 24);
+            this.txtEmail.TabIndex = 3;
             // 
             // txtSoDienThoai
             // 
@@ -81,7 +81,7 @@
             this.txtSoDienThoai.Location = new System.Drawing.Point(579, 146);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(255, 24);
-            this.txtSoDienThoai.TabIndex = 35;
+            this.txtSoDienThoai.TabIndex = 4;
             // 
             // txtTimKiem
             // 
@@ -89,7 +89,7 @@
             this.txtTimKiem.Location = new System.Drawing.Point(482, 211);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(231, 24);
-            this.txtTimKiem.TabIndex = 34;
+            this.txtTimKiem.TabIndex = 6;
             // 
             // txtTenNhaCC
             // 
@@ -97,7 +97,7 @@
             this.txtTenNhaCC.Location = new System.Drawing.Point(579, 105);
             this.txtTenNhaCC.Name = "txtTenNhaCC";
             this.txtTenNhaCC.Size = new System.Drawing.Size(255, 24);
-            this.txtTenNhaCC.TabIndex = 33;
+            this.txtTenNhaCC.TabIndex = 1;
             // 
             // txtDiaChi
             // 
@@ -105,7 +105,7 @@
             this.txtDiaChi.Location = new System.Drawing.Point(985, 105);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(231, 24);
-            this.txtDiaChi.TabIndex = 32;
+            this.txtDiaChi.TabIndex = 2;
             // 
             // txtGioiTinh
             // 
@@ -113,13 +113,13 @@
             this.txtGioiTinh.Location = new System.Drawing.Point(985, 146);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(246, 24);
-            this.txtGioiTinh.TabIndex = 30;
+            this.txtGioiTinh.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 142);
+            this.label5.Location = new System.Drawing.Point(58, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 28;
@@ -149,7 +149,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(870, 101);
+            this.label3.Location = new System.Drawing.Point(880, 101);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 24;
@@ -159,7 +159,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(865, 148);
+            this.label2.Location = new System.Drawing.Point(875, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 29;
@@ -217,7 +217,7 @@
             this.btnDelete.Location = new System.Drawing.Point(497, 254);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(123, 61);
-            this.btnDelete.TabIndex = 43;
+            this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -232,7 +232,7 @@
             this.btnEdit.Location = new System.Drawing.Point(308, 254);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(126, 61);
-            this.btnEdit.TabIndex = 42;
+            this.btnEdit.TabIndex = 9;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -247,7 +247,7 @@
             this.btnClose.Location = new System.Drawing.Point(1064, 254);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(129, 61);
-            this.btnClose.TabIndex = 41;
+            this.btnClose.TabIndex = 13;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
@@ -263,7 +263,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAdd.Size = new System.Drawing.Size(119, 61);
-            this.btnAdd.TabIndex = 39;
+            this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -278,7 +278,7 @@
             this.btnCancel.Location = new System.Drawing.Point(875, 254);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(123, 61);
-            this.btnCancel.TabIndex = 38;
+            this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -293,7 +293,7 @@
             this.btnSave.Location = new System.Drawing.Point(686, 254);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(124, 61);
-            this.btnSave.TabIndex = 37;
+            this.btnSave.TabIndex = 11;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -302,16 +302,16 @@
             // txtMaNCC
             // 
             this.txtMaNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaNCC.Location = new System.Drawing.Point(153, 105);
+            this.txtMaNCC.Location = new System.Drawing.Point(138, 105);
             this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(231, 24);
-            this.txtMaNCC.TabIndex = 47;
+            this.txtMaNCC.Size = new System.Drawing.Size(246, 24);
+            this.txtMaNCC.TabIndex = 0;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(38, 107);
+            this.label9.Location = new System.Drawing.Point(9, 107);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(111, 20);
             this.label9.TabIndex = 46;

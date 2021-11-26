@@ -22,7 +22,8 @@ namespace QuanLyCuaHangVatLieuXayDung
         }
         private void loạiHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            frmLoaiHang loaiHang = new frmLoaiHang();
+            loaiHang.ShowDialog();
         }
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)

@@ -20,7 +20,6 @@ namespace QuanLyCuaHangVatLieuXayDung
         private SqlConnection mySqlConnection;
         private SqlCommand mySqlCommand;
         private bool isNew;
-        public bool isExit = true;
         public event EventHandler Exit;
         DataTable tblNhaCC;
         public frmNhaCC()
@@ -31,7 +30,6 @@ namespace QuanLyCuaHangVatLieuXayDung
 
         private void frmNhaCC_Load(object sender, EventArgs e)
         {
-
             //kết nối tới CSDL
             mySqlConnection = new SqlConnection(conStr);
             mySqlConnection.Open();
@@ -142,8 +140,6 @@ namespace QuanLyCuaHangVatLieuXayDung
                 display("");
 
                 MessageBox.Show("Xóa thành công");
-            
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)

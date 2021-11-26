@@ -72,10 +72,10 @@
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.LightGray;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.Location = new System.Drawing.Point(855, 229);
+            this.btnTimKiem.Location = new System.Drawing.Point(860, 229);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(81, 31);
-            this.btnTimKiem.TabIndex = 62;
+            this.btnTimKiem.TabIndex = 8;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
@@ -85,24 +85,24 @@
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(990, 172);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(246, 24);
-            this.txtEmail.TabIndex = 58;
+            this.txtEmail.Size = new System.Drawing.Size(255, 24);
+            this.txtEmail.TabIndex = 6;
             // 
             // txtSoDienThoai
             // 
             this.txtSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoDienThoai.Location = new System.Drawing.Point(597, 172);
+            this.txtSoDienThoai.Location = new System.Drawing.Point(990, 111);
             this.txtSoDienThoai.Name = "txtSoDienThoai";
             this.txtSoDienThoai.Size = new System.Drawing.Size(255, 24);
-            this.txtSoDienThoai.TabIndex = 57;
+            this.txtSoDienThoai.TabIndex = 5;
             // 
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimKiem.Location = new System.Drawing.Point(619, 232);
+            this.txtTimKiem.Location = new System.Drawing.Point(595, 231);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(231, 24);
-            this.txtTimKiem.TabIndex = 56;
+            this.txtTimKiem.Size = new System.Drawing.Size(255, 24);
+            this.txtTimKiem.TabIndex = 7;
             // 
             // txtTenNV
             // 
@@ -110,29 +110,29 @@
             this.txtTenNV.Location = new System.Drawing.Point(213, 172);
             this.txtTenNV.Name = "txtTenNV";
             this.txtTenNV.Size = new System.Drawing.Size(255, 24);
-            this.txtTenNV.TabIndex = 55;
+            this.txtTenNV.TabIndex = 1;
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(213, 234);
+            this.txtDiaChi.Location = new System.Drawing.Point(595, 176);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(255, 24);
-            this.txtDiaChi.TabIndex = 54;
+            this.txtDiaChi.TabIndex = 4;
             // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGioiTinh.Location = new System.Drawing.Point(597, 112);
+            this.txtGioiTinh.Location = new System.Drawing.Point(213, 232);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(255, 24);
-            this.txtGioiTinh.TabIndex = 53;
+            this.txtGioiTinh.TabIndex = 2;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(884, 174);
+            this.label5.Location = new System.Drawing.Point(922, 174);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 51;
@@ -153,7 +153,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(492, 178);
+            this.label4.Location = new System.Drawing.Point(884, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 49;
@@ -163,7 +163,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(519, 236);
+            this.label8.Location = new System.Drawing.Point(545, 236);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 20);
             this.label8.TabIndex = 48;
@@ -173,7 +173,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(69, 236);
+            this.label3.Location = new System.Drawing.Point(517, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 47;
@@ -183,7 +183,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(495, 118);
+            this.label2.Location = new System.Drawing.Point(111, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 20);
             this.label2.TabIndex = 52;
@@ -193,7 +193,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(69, 178);
+            this.label1.Location = new System.Drawing.Point(59, 177);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 20);
             this.label1.TabIndex = 46;
@@ -219,7 +219,7 @@
             this.btnDelete.Location = new System.Drawing.Point(506, 292);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(123, 61);
-            this.btnDelete.TabIndex = 65;
+            this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -234,7 +234,7 @@
             this.btnEdit.Location = new System.Drawing.Point(314, 292);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(126, 61);
-            this.btnEdit.TabIndex = 64;
+            this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -249,7 +249,7 @@
             this.btnClose.Location = new System.Drawing.Point(1074, 292);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(129, 61);
-            this.btnClose.TabIndex = 63;
+            this.btnClose.TabIndex = 14;
             this.btnClose.Text = "Close";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClose.UseVisualStyleBackColor = false;
@@ -264,7 +264,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAdd.Size = new System.Drawing.Size(119, 61);
-            this.btnAdd.TabIndex = 61;
+            this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Add";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -279,7 +279,7 @@
             this.btnCancel.Location = new System.Drawing.Point(885, 292);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(123, 61);
-            this.btnCancel.TabIndex = 60;
+            this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -294,7 +294,7 @@
             this.btnSave.Location = new System.Drawing.Point(695, 292);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(124, 61);
-            this.btnSave.TabIndex = 59;
+            this.btnSave.TabIndex = 12;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = false;
@@ -304,7 +304,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(884, 118);
+            this.label6.Location = new System.Drawing.Point(491, 117);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 20);
             this.label6.TabIndex = 52;
@@ -313,16 +313,16 @@
             // txtNgaySinh
             // 
             this.txtNgaySinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgaySinh.Location = new System.Drawing.Point(990, 112);
+            this.txtNgaySinh.Location = new System.Drawing.Point(597, 111);
             this.txtNgaySinh.Name = "txtNgaySinh";
-            this.txtNgaySinh.Size = new System.Drawing.Size(246, 24);
-            this.txtNgaySinh.TabIndex = 53;
+            this.txtNgaySinh.Size = new System.Drawing.Size(253, 24);
+            this.txtNgaySinh.TabIndex = 3;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(69, 115);
+            this.label9.Location = new System.Drawing.Point(126, 116);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 20);
             this.label9.TabIndex = 46;
@@ -334,7 +334,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(213, 112);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(255, 24);
-            this.txtMaNV.TabIndex = 55;
+            this.txtMaNV.TabIndex = 0;
             // 
             // frmNhanVien
             // 
