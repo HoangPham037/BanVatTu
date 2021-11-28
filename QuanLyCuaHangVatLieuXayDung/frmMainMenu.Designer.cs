@@ -144,82 +144,84 @@
             // 
             this.kháchHàngToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_khachhang;
             this.kháchHàngToolStripMenuItem.Name = "kháchHàngToolStripMenuItem";
-            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.kháchHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.kháchHàngToolStripMenuItem.Text = "Khách hàng";
+            this.kháchHàngToolStripMenuItem.Click += new System.EventHandler(this.kháchHàngToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(221, 6);
             // 
             // nhàCungCấpToolStripMenuItem
             // 
             this.nhàCungCấpToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_ncc;
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.nhàCungCấpToolStripMenuItem.Text = "Nhà cung cấp";
             this.nhàCungCấpToolStripMenuItem.Click += new System.EventHandler(this.nhàCungCấpToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(221, 6);
             // 
             // loạiHàngToolStripMenuItem
             // 
             this.loạiHàngToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_loaihang;
             this.loạiHàngToolStripMenuItem.Name = "loạiHàngToolStripMenuItem";
-            this.loạiHàngToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.loạiHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.loạiHàngToolStripMenuItem.Text = "Loại hàng";
             this.loạiHàngToolStripMenuItem.Click += new System.EventHandler(this.loạiHàngToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(221, 6);
             // 
             // hàngHóaToolStripMenuItem
             // 
             this.hàngHóaToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_hanghoa;
             this.hàngHóaToolStripMenuItem.Name = "hàngHóaToolStripMenuItem";
-            this.hàngHóaToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.hàngHóaToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.hàngHóaToolStripMenuItem.Text = "Hàng hóa";
+            this.hàngHóaToolStripMenuItem.Click += new System.EventHandler(this.hàngHóaToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(221, 6);
             // 
             // nhậpHàngToolStripMenuItem
             // 
             this.nhậpHàngToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_nhaphang;
             this.nhậpHàngToolStripMenuItem.Name = "nhậpHàngToolStripMenuItem";
             this.nhậpHàngToolStripMenuItem.ShowShortcutKeys = false;
-            this.nhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.nhậpHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.nhậpHàngToolStripMenuItem.Text = "Nhập hàng";
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(221, 6);
             // 
             // xuấtHàngToolStripMenuItem
             // 
             this.xuấtHàngToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_xuat;
             this.xuấtHàngToolStripMenuItem.Name = "xuấtHàngToolStripMenuItem";
-            this.xuấtHàngToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.xuấtHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.xuấtHàngToolStripMenuItem.Text = "Xuất hàng";
             // 
             // toolStripSeparator8
             // 
             this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(215, 6);
+            this.toolStripSeparator8.Size = new System.Drawing.Size(221, 6);
             // 
             // khoToolStripMenuItem
             // 
             this.khoToolStripMenuItem.Image = global::QuanLyCuaHangVatLieuXayDung.Properties.Resources.ic_kho;
             this.khoToolStripMenuItem.Name = "khoToolStripMenuItem";
-            this.khoToolStripMenuItem.Size = new System.Drawing.Size(218, 32);
+            this.khoToolStripMenuItem.Size = new System.Drawing.Size(224, 32);
             this.khoToolStripMenuItem.Text = "Kho";
             // 
             // báoCáoThốngKêToolStripMenuItem
@@ -240,7 +242,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(551, 328);
+            this.label1.Location = new System.Drawing.Point(487, 328);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(614, 69);
             this.label1.TabIndex = 1;
@@ -250,7 +252,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(466, 397);
+            this.label2.Location = new System.Drawing.Point(402, 397);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(761, 69);
             this.label2.TabIndex = 1;

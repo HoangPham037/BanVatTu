@@ -27,3 +27,5 @@ D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatL
 D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.csproj.CoreCompileInputs.cache
 D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.exe
 D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.pdb
+D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmHangHoa.resources
+D:\laptrinh.Net\BanVatTu\QuanLyCuaHangVatLieuXayDung\obj\Debug\QuanLyCuaHangVatLieuXayDung.frmKhachHang.resources

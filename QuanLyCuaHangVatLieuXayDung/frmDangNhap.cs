@@ -14,6 +14,7 @@ namespace QuanLyCuaHangVatLieuXayDung
 {
     public partial class frmDangNhap : Form
     {
+
         private string conStr = @"Data Source=DESKTOP-MF0NP8H\SQLEXPRESS;Initial Catalog=CSDLQLBH;Integrated Security=True";
         private SqlConnection mySqlConnection;
         private SqlCommand mySqlCommand;

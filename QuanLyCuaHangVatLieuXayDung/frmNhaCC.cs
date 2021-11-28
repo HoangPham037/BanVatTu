@@ -50,18 +50,15 @@ namespace QuanLyCuaHangVatLieuXayDung
         {
 
             //chuyen con tro ve txtFirstName
-
-                txtTenNhaCC.Focus();
+                txtTenNCC.Focus();
                 isNew = false;
                 SetControls(false);
-            
         }
-
         private void SetControls(bool edit)
         {
             //thiet lap trang thai Enable/Disable cho cac textbox
             txtMaNCC.Enabled = !edit;
-            txtTenNhaCC.Enabled = !edit;
+            txtTenNCC.Enabled = !edit;
             txtGioiTinh.Enabled = !edit;
             txtDiaChi.Enabled = !edit;
             txtSoDienThoai.Enabled = !edit;
@@ -73,42 +70,37 @@ namespace QuanLyCuaHangVatLieuXayDung
             btnSave.Enabled = !edit;
             btnCancel.Enabled = !edit;
         }
-
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
             txtMaNCC.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtTenNhaCC.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+            txtTenNCC.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtSoDienThoai.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
             txtEmail.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtGioiTinh.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             SetControls(true);
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //thiet lap cac trang thai
-
                 isNew = true;
                 SetControls(false);
                 //xoa trang cac textboxes
                 txtMaNCC.Clear();
-                txtTenNhaCC.Clear();
+                txtTenNCC.Clear();
                 txtGioiTinh.Clear();
                 txtDiaChi.Clear();
                 txtSoDienThoai.Clear();
                 txtEmail.Clear();
                 //chuyen con tro ve txtFirstName
-                txtTenNhaCC.Focus();
+                txtTenNCC.Focus();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -117,7 +109,6 @@ namespace QuanLyCuaHangVatLieuXayDung
                 DialogResult dialog;
                 dialog = MessageBox.Show("Bạn có chắc chắn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialog == DialogResult.No) return;
-
                 //Lấy dữ liệu trên lưới
                 int row = dataGridView1.CurrentRow.Index;
                 string MaNCC = dataGridView1.Rows[row].Cells[0].Value.ToString();
@@ -138,17 +129,15 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@GioiTinh", SqlDbType.NVarChar, 5).Value = GioiTinh;
                 mySqlCommand.ExecuteNonQuery();
                 display("");
-
                 MessageBox.Show("Xóa thành công");
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            if (txtTenNhaCC.Text.Trim() == "")
+            if (txtTenNCC.Text.Trim() == "")
             {
-                MessageBox.Show("Đề nghị nhập tên nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtTenNhaCC.Focus();
+                MessageBox.Show("Đề nghị nhập tên nhà cung cấp!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTenNCC.Focus();
                 return;
             }
             if (txtGioiTinh.Text.Trim() == "")
@@ -182,14 +171,13 @@ namespace QuanLyCuaHangVatLieuXayDung
                 string sSql = "INSERT INTO tblNhaCC (MaNCC,TenNCC,GioiTinh,DiaChi,SoDienThoai,Email) VALUES (@MaNCC,@TenNCC,@GioiTinh,@DiaChi,@SoDienThoai,@Email)";
                 mySqlCommand = new SqlCommand(sSql, mySqlConnection);
                 mySqlCommand.Parameters.Add("@MaNCC", SqlDbType.VarChar, 15).Value = txtMaNCC.Text;
-                mySqlCommand.Parameters.Add("@TenNCC", SqlDbType.NVarChar, 50).Value = txtTenNhaCC.Text;
+                mySqlCommand.Parameters.Add("@TenNCC", SqlDbType.NVarChar, 50).Value = txtTenNCC.Text;
                 mySqlCommand.Parameters.Add("@DiaChi", SqlDbType.NVarChar, 250).Value = txtDiaChi.Text;
                 mySqlCommand.Parameters.Add("@SoDienThoai", SqlDbType.NVarChar, 11).Value = txtSoDienThoai.Text;
                 mySqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar, 35).Value = txtEmail.Text;
                 mySqlCommand.Parameters.Add("@GioiTinh", SqlDbType.NVarChar, 5).Value = txtGioiTinh.Text;
-
-
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công!!!","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -208,7 +196,7 @@ namespace QuanLyCuaHangVatLieuXayDung
                               "WHERE (MaNCC = @MaNCC1) and (TenNCC = @TenNCC1) and (DiaChi = @DiaChi1) and (SoDienThoai = @SoDienThoai1) and (Email = @Email1) and (GioiTinh = @GioiTinh1) ";
                 mySqlCommand = new SqlCommand(sSql, mySqlConnection);
                 mySqlCommand.Parameters.Add("@MaNCC", SqlDbType.VarChar, 15).Value = txtMaNCC.Text;
-                mySqlCommand.Parameters.Add("@TenNCC", SqlDbType.NVarChar, 50).Value = txtTenNhaCC.Text;
+                mySqlCommand.Parameters.Add("@TenNCC", SqlDbType.NVarChar, 50).Value = txtTenNCC.Text;
                 mySqlCommand.Parameters.Add("@DiaChi", SqlDbType.NVarChar, 250).Value = txtDiaChi.Text;
                 mySqlCommand.Parameters.Add("@SoDienThoai", SqlDbType.NVarChar, 11).Value = txtSoDienThoai.Text;
                 mySqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar, 35).Value = txtEmail.Text;
@@ -221,6 +209,7 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@Email1", SqlDbType.NVarChar, 35).Value = Email;
                 mySqlCommand.Parameters.Add("@GioiTinh1", SqlDbType.NVarChar, 5).Value = GioiTinh;
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công!","Thông báo...", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             //Truy van va hien thi lai du lieu tren luoi
             display("");

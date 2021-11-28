@@ -64,5 +64,17 @@ namespace QuanLyCuaHangVatLieuXayDung
             frmNhanVien nhanvien = new frmNhanVien();
             nhanvien.ShowDialog();
         }
+
+        private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmKhachHang frmKhachHang = new frmKhachHang(); 
+            frmKhachHang.ShowDialog();
+        }
+
+        private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHangHoa frmHang = new frmHangHoa();  
+            frmHang.ShowDialog();
+        }
     }
 }

@@ -1,5 +1,16 @@
 {
   "Version": 1,
-  "ProjectMap": {},
-  "NextColorIndex": 0
+  "ProjectMap": {
+    "786c99b5-4560-46ac-8395-21abe03a2a1c": {
+      "ProjectGuid": "786c99b5-4560-46ac-8395-21abe03a2a1c",
+      "DisplayName": "QuanLyCuaHangVatLieuXayDung",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
 }

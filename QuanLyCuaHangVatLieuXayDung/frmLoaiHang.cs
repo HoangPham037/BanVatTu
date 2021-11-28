@@ -130,19 +130,19 @@ namespace QuanLyCuaHangVatLieuXayDung
         {
             if (txtMaLH.Text.Trim() == "")
             {
-                MessageBox.Show("Đề nghị nhập tên nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đề nghị nhập loại hàng hóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMaLH.Focus();
                 return;
             }
             if (txtTenLH.Text.Trim() == "")
             {
-                MessageBox.Show("Đề nghị nhập giới tính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đề nghị nhập tên loại hàng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtTenLH.Focus();
                 return;
             }
             if (txtMieuTa.Text.Trim() == "")
             {
-                MessageBox.Show("Đề nghị nhập địa chỉ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Đề nghị nhập miêu tả!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMieuTa.Focus();
                 return;
             }
