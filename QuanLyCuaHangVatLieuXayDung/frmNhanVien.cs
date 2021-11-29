@@ -124,6 +124,12 @@ namespace QuanLyCuaHangVatLieuXayDung
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (txtMaNV.Text.Trim() == "")
+            {
+                MessageBox.Show("Đề nghị nhập mã nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtTenNV.Focus();
+                return;
+            }
             if (txtTenNV.Text.Trim() == "")
             {
                 MessageBox.Show("Đề nghị nhập tên nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
