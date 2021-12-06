@@ -46,18 +46,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database.cs" />
+    <Compile Include="frmChiTietHDNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHDNhap.Designer.cs">
+      <DependentUpon>frmChiTietHDNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCTPX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTPX.Designer.cs">
+      <DependentUpon>frmCTPX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormNhanVien.Designer.cs">
+      <DependentUpon>frmFormNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHDNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHDNhap.Designer.cs">
+      <DependentUpon>frmHDNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmDangNhap.Designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHangHoa.cs">
+    <Compile Include="frmHHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHangHoa.Designer.cs">
-      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    <Compile Include="frmHHoa.Designer.cs">
+      <DependentUpon>frmHHoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHoaDonXuat.Designer.cs">
+      <DependentUpon>frmHoaDonXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKhachHang.cs">
       <SubType>Form</SubType>
@@ -65,11 +94,11 @@
     <Compile Include="frmKhachHang.Designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLoaiHang.cs">
+    <Compile Include="frmLoaiHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLoaiHang.Designer.cs">
-      <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    <Compile Include="frmLoaiHangHoa.Designer.cs">
+      <DependentUpon>frmLoaiHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMainMenu.cs">
       <SubType>Form</SubType>
@@ -77,40 +106,55 @@
     <Compile Include="frmMainMenu.Designer.cs">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNhaCC.cs">
+    <Compile Include="frmNhaCungCap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNhaCC.Designer.cs">
-      <DependentUpon>frmNhaCC.cs</DependentUpon>
+    <Compile Include="frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmNhanVien.cs">
+    <Compile Include="frmTTTK.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmNhanVien.Designer.cs">
-      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    <Compile Include="frmTTTK.Designer.cs">
+      <DependentUpon>frmTTTK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmChiTietHDNhap.resx">
+      <DependentUpon>frmChiTietHDNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCTPX.resx">
+      <DependentUpon>frmCTPX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormNhanVien.resx">
+      <DependentUpon>frmFormNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHDNhap.resx">
+      <DependentUpon>frmHDNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHangHoa.resx">
-      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="frmHHoa.resx">
+      <DependentUpon>frmHHoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHoaDonXuat.resx">
+      <DependentUpon>frmHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLoaiHang.resx">
-      <DependentUpon>frmLoaiHang.cs</DependentUpon>
+    <EmbeddedResource Include="frmLoaiHangHoa.resx">
+      <DependentUpon>frmLoaiHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNhaCC.resx">
-      <DependentUpon>frmNhaCC.cs</DependentUpon>
+    <EmbeddedResource Include="frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmNhanVien.resx">
-      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    <EmbeddedResource Include="frmTTTK.resx">
+      <DependentUpon>frmTTTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

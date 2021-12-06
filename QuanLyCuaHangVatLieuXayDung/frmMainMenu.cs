@@ -22,14 +22,14 @@ namespace QuanLyCuaHangVatLieuXayDung
         }
         private void loạiHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmLoaiHang loaiHang = new frmLoaiHang();
-            loaiHang.ShowDialog();
+            frmLoaiHangHoa loaiHangHoa = new frmLoaiHangHoa();
+            loaiHangHoa.ShowDialog();
         }
 
         private void nhàCungCấpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNhaCC nhaCC = new frmNhaCC();
-            nhaCC.ShowDialog();
+           frmNhaCungCap nhaCungCap = new frmNhaCungCap();
+            nhaCungCap.ShowDialog();
         }
 
         private void frmMainMenu_FormClosed(object sender, FormClosedEventArgs e)
@@ -61,8 +61,8 @@ namespace QuanLyCuaHangVatLieuXayDung
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNhanVien nhanvien = new frmNhanVien();
-            nhanvien.ShowDialog();
+            frmFormNhanVien nhanVien = new frmFormNhanVien();
+            nhanVien.ShowDialog();
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
@@ -73,8 +73,26 @@ namespace QuanLyCuaHangVatLieuXayDung
 
         private void hàngHóaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHangHoa frmHang = new frmHangHoa();  
-            frmHang.ShowDialog();
+            frmHHoa hHoa = new frmHHoa();
+            hHoa.ShowDialog();
+        }
+
+        private void nhậpHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHDNhap nhHang = new frmHDNhap();
+           nhHang.ShowDialog();
+        }
+
+        private void xuấtHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmHoaDonXuat hoaDonXuat = new frmHoaDonXuat();
+            hoaDonXuat.ShowDialog();
+        }
+
+        private void thôngTinTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTTTK tTTK = new frmTTTK();
+            tTTK.ShowDialog();
         }
     }
 }

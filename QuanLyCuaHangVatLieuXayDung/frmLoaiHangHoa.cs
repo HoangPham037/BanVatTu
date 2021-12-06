@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace QuanLyCuaHangVatLieuXayDung
 {
-    public partial class frmLoaiHang : Form
+    public partial class frmLoaiHangHoa : Form
     {
         private string conStr = @"Data Source=DESKTOP-MF0NP8H\SQLEXPRESS;Initial Catalog=CSDLQLBH;Integrated Security=True";
         private SqlConnection mySqlConnection;
@@ -19,12 +19,12 @@ namespace QuanLyCuaHangVatLieuXayDung
         private bool isNew;
         public event EventHandler Exit;
         DataTable tblLoaiHang;
-        public frmLoaiHang()
+        public frmLoaiHangHoa()
         {
             InitializeComponent();
         }
 
-        private void frmLoaiHang_Load(object sender, EventArgs e)
+        private void frmLoaiHangHoa_Load(object sender, EventArgs e)
         {
             //kết nối tới CSDL
             mySqlConnection = new SqlConnection(conStr);
@@ -57,32 +57,16 @@ namespace QuanLyCuaHangVatLieuXayDung
             btnSave.Enabled = !edit;
             btnCancel.Enabled = !edit;
         }
-        private void FrmMainMenu_Exit(object sender, EventArgs e)
-        {
-            (sender as frmMainMenu).isExit = false;
-            (sender as frmMainMenu).Close();
-            this.Show();
-        }
-
-        private void btnQuayLai_Click(object sender, EventArgs e)
-        {
-            frmMainMenu frmMainMenu = new frmMainMenu();
-            frmMainMenu.Show();
-            this.Hide();
-            frmMainMenu.Exit += FrmMainMenu_Exit;
-        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //thiet lap cac trang thai
-
             isNew = true;
             SetControls(false);
             //xoa trang cac textboxes
             txtMaLH.Clear();
             txtTenLH.Clear();
             txtMieuTa.Clear();
-            
             //chuyen con tro ve txtFirstName
             txtTenLH.Focus();
         }
@@ -97,6 +81,7 @@ namespace QuanLyCuaHangVatLieuXayDung
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+
             //Xác nhận có xóa không
             DialogResult dialog;
             dialog = MessageBox.Show("Bạn có chắc chắn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);

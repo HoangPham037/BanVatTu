@@ -11,26 +11,38 @@ using System.Data.SqlClient;
 
 namespace QuanLyCuaHangVatLieuXayDung
 {
-    public partial class frmNhanVien : Form
+    public partial class frmFormNhanVien : Form
     {
+
         private string conStr = @"Data Source=DESKTOP-MF0NP8H\SQLEXPRESS;Initial Catalog=CSDLQLBH;Integrated Security=True";
-        private SqlConnection mySqlConnection;
+        private SqlConnection mySqlConnection = null;
         private SqlCommand mySqlCommand;
         private bool isNew;
-        public bool isExit = true;
-        public event EventHandler Exit;
         DataTable tblNhanVien;
-
-        public frmNhanVien()
+        public frmFormNhanVien()
         {
             InitializeComponent();
         }
 
-        private void frmNhanVien_Load(object sender, EventArgs e)
+        private void frmFormNhanVien_Load(object sender, EventArgs e)
         {
+
             //kết nối tới CSDL
-            mySqlConnection = new SqlConnection(conStr);
-            mySqlConnection.Open();
+            try
+            {
+                if (mySqlConnection == null)
+                {
+                    mySqlConnection = new SqlConnection(conStr);
+                }
+                if (mySqlConnection.State == ConnectionState.Closed)
+                {
+                    mySqlConnection.Open();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             display("");
         }
@@ -77,7 +89,6 @@ namespace QuanLyCuaHangVatLieuXayDung
             txtEmail.Clear();
             //chuyen con tro ve txtFirstName
             txtTenNV.Focus();
-
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -86,13 +97,11 @@ namespace QuanLyCuaHangVatLieuXayDung
             txtTenNV.Focus();
             isNew = false;
             SetControls(false);
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             //Xác nhận có xóa không
-
             DialogResult dialog;
             dialog = MessageBox.Show("Bạn có chắc chắn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.No) return;
@@ -106,9 +115,8 @@ namespace QuanLyCuaHangVatLieuXayDung
             string DiaChi = dataGridView1.Rows[row].Cells[4].Value.ToString();
             string SoDienThoai = dataGridView1.Rows[row].Cells[5].Value.ToString();
             string Email = dataGridView1.Rows[row].Cells[6].Value.ToString();
-
             string sSql = "DELETE FROM tblNhanVien WHERE (MaNV = @MaNV) and (TenNV = @TenNV) and (GioiTinh = @GioiTinh) and (NgaySinh = @NgaySinh) and (DiaChi = @DiaChi) " +
-                "and (SoDienThoai = @SoDienThoai) and (Email = @Email)";
+                          "and (SoDienThoai = @SoDienThoai) and (Email = @Email)";
             mySqlCommand = new SqlCommand(sSql, mySqlConnection);
             mySqlCommand.Parameters.Add("@MaNV", SqlDbType.VarChar, 15).Value = MaNV;
             mySqlCommand.Parameters.Add("@TenNV", SqlDbType.NVarChar, 50).Value = TenNV;
@@ -118,8 +126,8 @@ namespace QuanLyCuaHangVatLieuXayDung
             mySqlCommand.Parameters.Add("@SoDienThoai", SqlDbType.NVarChar, 11).Value = SoDienThoai;
             mySqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = Email;
             mySqlCommand.ExecuteNonQuery();
+            MessageBox.Show("Xóa thành công");
             display("");
-
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -180,9 +188,8 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@DiaChi", SqlDbType.NVarChar, 50).Value = txtDiaChi.Text;
                 mySqlCommand.Parameters.Add("@SoDienThoai", SqlDbType.NVarChar, 11).Value = txtSoDienThoai.Text;
                 mySqlCommand.Parameters.Add("@Email", SqlDbType.NVarChar, 50).Value = txtEmail.Text;
-
-
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
             }
             else
             {
@@ -217,31 +224,21 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@SoDienThoai1", SqlDbType.NVarChar, 11).Value = SoDienThoai;
                 mySqlCommand.Parameters.Add("@Email1", SqlDbType.NVarChar, 50).Value = Email;
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công");
             }
             //Truy van va hien thi lai du lieu tren luoi
             display("");
             SetControls(true);
-
-        }
-        private void FrmMainMenu_Exit(object sender, EventArgs e)
-        {
-            (sender as frmMainMenu).isExit = false;
-            (sender as frmMainMenu).Close();
-            this.Show();
-        }
-
-        private void btnQuayLai_Click(object sender, EventArgs e)
-        {
-            frmMainMenu frmMainMenu = new frmMainMenu();
-            frmMainMenu.Show();
-            this.Hide();
-            frmMainMenu.Exit += FrmMainMenu_Exit;
-
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             SetControls(true);
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            display(txtTimKiem.Text);
         }
 
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -253,12 +250,6 @@ namespace QuanLyCuaHangVatLieuXayDung
             txtDiaChi.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
             txtSoDienThoai.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
             txtEmail.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            display(txtTimKiem.Text);
         }
     }
 }

@@ -11,33 +11,27 @@ using System.Data.SqlClient;
 
 namespace QuanLyCuaHangVatLieuXayDung
 {
-    public partial class frmHangHoa : Form
+    public partial class frmHHoa : Form
     {
         private string conStr = @"Data Source=DESKTOP-MF0NP8H\SQLEXPRESS;Initial Catalog=CSDLQLBH;Integrated Security=True";
-        
         private SqlConnection mySqlConnection;
-        
         private SqlCommand mySqlCommand;
         private bool isNew;
         public bool isExit = true;
         public event EventHandler Exit;
         DataTable tblHangHoa;
-        public frmHangHoa()
+        public frmHHoa()
         {
             InitializeComponent();
         }
 
-        private void frmHangHoa_Load(object sender, EventArgs e)
+        private void frmHHoa_Load(object sender, EventArgs e)
         {
-
-
             //kết nối tới CSDL
             mySqlConnection = new SqlConnection(conStr);
             mySqlConnection.Open();
             LoadComboBox();
-
             display("");
-
         }
         void LoadComboBox()
         {
@@ -47,8 +41,6 @@ namespace QuanLyCuaHangVatLieuXayDung
             tblHangHoa.Load(sqlDataReader);
             cbLoaiHang.DisplayMember = "MaLH";
             cbLoaiHang.DataSource = tblHangHoa;
-
-
         }
         private void display(String TenHH)
         {
@@ -78,9 +70,9 @@ namespace QuanLyCuaHangVatLieuXayDung
             btnSave.Enabled = !edit;
             btnCancel.Enabled = !edit;
         }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
             //thiet lap cac trang thai
             isNew = true;
             SetControls(false);
@@ -104,7 +96,6 @@ namespace QuanLyCuaHangVatLieuXayDung
         private void btnDelete_Click(object sender, EventArgs e)
         {
             //Xác nhận có xóa không
-
             DialogResult dialog;
             dialog = MessageBox.Show("Bạn có chắc chắn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.No) return;
@@ -126,6 +117,7 @@ namespace QuanLyCuaHangVatLieuXayDung
             mySqlCommand.Parameters.Add("@XuatXu", SqlDbType.NVarChar, 50).Value = XuatXu;
             mySqlCommand.ExecuteNonQuery();
             display("");
+            MessageBox.Show("Xóa thành công");
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -166,9 +158,8 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@TenHH", SqlDbType.NVarChar, 50).Value = txtTenHH.Text;
                 mySqlCommand.Parameters.Add("@DonViTinh", SqlDbType.NVarChar, 50).Value = txtDonViTinh.Text;
                 mySqlCommand.Parameters.Add("@XuatXu", SqlDbType.NVarChar, 00).Value = txtXuatXu.Text;
-
-
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Thêm thành công");
             }
             else
             {
@@ -190,7 +181,7 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@MaHH", SqlDbType.VarChar, 15).Value = txtMaHH.Text;
                 mySqlCommand.Parameters.Add("@TenHH", SqlDbType.NVarChar, 50).Value = txtTenHH.Text;
                 mySqlCommand.Parameters.Add("@DonViTinh", SqlDbType.NVarChar, 50).Value = txtDonViTinh.Text;
-                mySqlCommand.Parameters.Add("@XuatXu", SqlDbType.NVarChar, 50).Value = txtXuatXu.Text;;
+                mySqlCommand.Parameters.Add("@XuatXu", SqlDbType.NVarChar, 50).Value = txtXuatXu.Text; ;
 
                 mySqlCommand.Parameters.Add("@MaLH1", SqlDbType.VarChar, 15).Value = MaLH;
                 mySqlCommand.Parameters.Add("@MaHH1", SqlDbType.NVarChar, 15).Value = MaHH;
@@ -198,6 +189,7 @@ namespace QuanLyCuaHangVatLieuXayDung
                 mySqlCommand.Parameters.Add("@DonViTinh1", SqlDbType.NVarChar, 50).Value = DonViTinh;
                 mySqlCommand.Parameters.Add("@XuatXu1", SqlDbType.NVarChar, 50).Value = XuatXu;
                 mySqlCommand.ExecuteNonQuery();
+                MessageBox.Show("Sửa thành công");
             }
             //Truy van va hien thi lai du lieu tren luoi
             display("");
@@ -221,11 +213,6 @@ namespace QuanLyCuaHangVatLieuXayDung
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             display(txtTimKiem.Text);
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
